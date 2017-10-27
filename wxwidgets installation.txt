@@ -1,0 +1,12 @@
+wxwidgets是开源的跨平台的C++构架库（framework），它可以提供GUI（图形用户界面）和其它工具，目前已经有3.1.0版本。
+在windows下可以与微软的VS平台或者codeblocks平台搭配使用。
+在windows下wxwidgets+codeblocks的安装过程如下：
+一、所需的工具
+1.windows 7旗舰版
+2.codeblocks-16.01mingw-setup.exe，从http://www.codeblocks.org/downloads/26下载，安装后包含mingw32.
+3.wxWidgets可以从http://www.wxwidgets.org/downloads/下载，wxWidgets3.0.3可以使用tdm-gcc4.9.2和5.1版本。
+二、安装
+1.安装codeblocks16.01。下载codeblocks-16.01mingw-setup.exe后，双击程序，按照提示进行安装，安装完成后打开codeblocks，在settings-compiler-Toolchain executables中查看Compiler's installation directory中看到C:\Program Files (x86)\CodeBlocks\MinGW即是MinGW的安装路径。
+在命令行窗口输入gcc -v，即可看到gcc的版本。
+2.安装wxWidgets。可以下载source code和binaries版本的wxWidgets，其中Windows installer程序可以直接安装，wxMSW DLLs需要进行编译。
+安装完成后，需要将include/wx/platform.h文件中的wx/setup.h修改为wx/msw/setup.h。
