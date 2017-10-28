@@ -1,12 +1,12 @@
-wxwidgetsÊÇ¿ªÔ´µÄ¿çÆ½Ì¨µÄC++¹¹¼Ü¿â£¨framework£©£¬Ëü¿ÉÒÔÌá¹©GUI£¨Í¼ĞÎÓÃ»§½çÃæ£©ºÍÆäËü¹¤¾ß£¬Ä¿Ç°ÒÑ¾­ÓĞ3.1.0°æ±¾¡£
-ÔÚwindowsÏÂ¿ÉÒÔÓëÎ¢ÈíµÄVSÆ½Ì¨»òÕßcodeblocksÆ½Ì¨´îÅäÊ¹ÓÃ¡£
-ÔÚwindowsÏÂwxwidgets+codeblocksµÄ°²×°¹ı³ÌÈçÏÂ£º
-Ò»¡¢ËùĞèµÄ¹¤¾ß
-1.windows 7Æì½¢°æ
-2.codeblocks-16.01mingw-setup.exe£¬´Óhttp://www.codeblocks.org/downloads/26ÏÂÔØ£¬°²×°ºó°üº¬mingw32.
-3.wxWidgets¿ÉÒÔ´Óhttp://www.wxwidgets.org/downloads/ÏÂÔØ£¬wxWidgets3.0.3¿ÉÒÔÊ¹ÓÃtdm-gcc4.9.2ºÍ5.1°æ±¾¡£
-¶ş¡¢°²×°
-1.°²×°codeblocks16.01¡£ÏÂÔØcodeblocks-16.01mingw-setup.exeºó£¬Ë«»÷³ÌĞò£¬°´ÕÕÌáÊ¾½øĞĞ°²×°£¬°²×°Íê³Éºó´ò¿ªcodeblocks£¬ÔÚsettings-compiler-Toolchain executablesÖĞ²é¿´Compiler's installation directoryÖĞ¿´µ½C:\Program Files (x86)\CodeBlocks\MinGW¼´ÊÇMinGWµÄ°²×°Â·¾¶¡£
-ÔÚÃüÁîĞĞ´°¿ÚÊäÈëgcc -v£¬¼´¿É¿´µ½gccµÄ°æ±¾¡£
-2.°²×°wxWidgets¡£¿ÉÒÔÏÂÔØsource codeºÍbinaries°æ±¾µÄwxWidgets£¬ÆäÖĞWindows installer³ÌĞò¿ÉÒÔÖ±½Ó°²×°£¬wxMSW DLLsĞèÒª½øĞĞ±àÒë¡£
-°²×°Íê³Éºó£¬ĞèÒª½«include/wx/platform.hÎÄ¼şÖĞµÄwx/setup.hĞŞ¸ÄÎªwx/msw/setup.h¡£
+ï»¿wxwidgetsæ˜¯å¼€æºçš„è·¨å¹³å°çš„C++æ„æ¶åº“ï¼ˆframeworkï¼‰ï¼Œå®ƒå¯ä»¥æä¾›GUIï¼ˆå›¾å½¢ç”¨æˆ·ç•Œé¢ï¼‰å’Œå…¶å®ƒå·¥å…·ï¼Œç›®å‰å·²ç»æœ‰3.1.0ç‰ˆæœ¬ã€‚
+åœ¨windowsä¸‹å¯ä»¥ä¸å¾®è½¯çš„VSå¹³å°æˆ–è€…codeblockså¹³å°æ­é…ä½¿ç”¨ã€‚
+åœ¨windowsä¸‹wxwidgets+codeblocksçš„å®‰è£…è¿‡ç¨‹å¦‚ä¸‹ï¼š
+ä¸€ã€æ‰€éœ€çš„å·¥å…·
+1.windows 7æ——èˆ°ç‰ˆ
+2.codeblocks-16.01mingw-setup.exeï¼Œä»http://www.codeblocks.org/downloads/26ä¸‹è½½ï¼Œå®‰è£…ååŒ…å«mingw32.
+3.wxWidgetså¯ä»¥ä»http://www.wxwidgets.org/downloads/ä¸‹è½½ï¼ŒwxWidgets3.0.3å¯ä»¥ä½¿ç”¨tdm-gcc4.9.2å’Œ5.1ç‰ˆæœ¬ã€‚
+äºŒã€å®‰è£…
+1.å®‰è£…codeblocks16.01ã€‚ä¸‹è½½codeblocks-16.01mingw-setup.exeåï¼ŒåŒå‡»ç¨‹åºï¼ŒæŒ‰ç…§æç¤ºè¿›è¡Œå®‰è£…ï¼Œå®‰è£…å®Œæˆåæ‰“å¼€codeblocksï¼Œåœ¨settings-compiler-Toolchain executablesä¸­æŸ¥çœ‹Compiler's installation directoryä¸­çœ‹åˆ°C:\Program Files (x86)\CodeBlocks\MinGWå³æ˜¯MinGWçš„å®‰è£…è·¯å¾„ã€‚
+åœ¨å‘½ä»¤è¡Œçª—å£è¾“å…¥gcc -vï¼Œå³å¯çœ‹åˆ°gccçš„ç‰ˆæœ¬ã€‚
+2.å®‰è£…wxWidgetsã€‚å¯ä»¥ä¸‹è½½source codeå’Œbinariesç‰ˆæœ¬çš„wxWidgetsï¼Œå…¶ä¸­Windows installerç¨‹åºå¯ä»¥ç›´æ¥å®‰è£…ï¼ŒwxMSW DLLséœ€è¦è¿›è¡Œç¼–è¯‘ã€‚
+å®‰è£…å®Œæˆåï¼Œéœ€è¦å°†include/wx/platform.hæ–‡ä»¶ä¸­çš„wx/setup.hä¿®æ”¹ä¸ºwx/msw/setup.hã€‚
