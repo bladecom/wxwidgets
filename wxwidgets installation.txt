@@ -6,7 +6,21 @@
 2.codeblocks-16.01mingw-setup.exe，从http://www.codeblocks.org/downloads/26下载，安装后包含mingw32.
 3.wxWidgets可以从http://www.wxwidgets.org/downloads/下载，wxWidgets3.0.3可以使用tdm-gcc4.9.2和5.1版本。
 二、安装
-1.安装codeblocks16.01。下载codeblocks-16.01mingw-setup.exe后，双击程序，按照提示进行安装，安装完成后打开codeblocks，在settings-compiler-Toolchain executables中查看Compiler's installation directory中看到C:\Program Files (x86)\CodeBlocks\MinGW即是MinGW的安装路径。
+1.安装codeblocks16.01。
+     下载codeblocks-16.01mingw-setup.exe后，双击程序，按照提示进行安装，安装完成后打开codeblocks，在settings-compiler-Toolchain executables中查看Compiler's installation directory中看到C:\Program Files (x86)\CodeBlocks\MinGW即是MinGW的安装路径。
 在命令行窗口输入gcc -v，即可看到gcc的版本。
-2.安装wxWidgets。可以下载source code和binaries版本的wxWidgets，其中Windows installer程序可以直接安装，wxMSW DLLs需要进行编译。
+2.安装wxWidgets。
+     可以下载source code和binaries版本的wxWidgets，其中Windows installer程序可以直接安装，wxMSW DLLs需要进行编译。
 安装完成后，需要将include/wx/platform.h文件中的wx/setup.h修改为wx/msw/setup.h。
+    使用编译版,需要使用gcc-make命令。
+    在命令行窗口cmd至X:\wxWidgets-3.0.2\build\msw目录下,依次输入以下三条命令：
+        清理：mingw32-make -f makefile.gcc clean
+        编译Release版本：mingw32-make -f makefile.gcc MONOLITHIC=0 SHARED=1 UNICODE=1 BUILD=release
+        编译Debug版本：mingw32-make -f makefile.gcc MONOLITHIC=0 SHARED=1 UNICODE=1 BUILD=debug
+        完成上面三条命令的编译总共大约需要1个多小时的时间。
+3.配置codeblocks。
+在settings - Global variables 中配置wxwidgets 路径和参数,并在compiler 中将库文件导入到列表中,然后可以进行测试。
+4.测试。
+使用工程向导建立一个WxWidgets工程序员,然后编译运行。
+
+
